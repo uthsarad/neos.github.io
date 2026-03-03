@@ -65,7 +65,30 @@
   </div>
 </div>
 
-<div class="page" id="page-download"><div class="content-area"><div class="sec-eyebrow">Get NeOS</div><h2 class="sec-title">Download</h2><p class="sec-body">All releases are snapshot-tested and coherence-verified.</p></div></div>
+<div class="page" id="page-download">
+  <div class="content-area">
+    <div class="sec-eyebrow">Get NeOS</div>
+    <h2 class="sec-title">Download</h2>
+    <p class="sec-body">All releases are snapshot-tested and coherence-verified.</p>
+
+    <div class="card dl-card featured reveal">
+      <div class="dl-recommended">Live</div>
+      <div class="dl-ver">GitHub Releases</div>
+      <h3 class="dl-name">Latest Stable Build</h3>
+      <p class="dl-desc" id="latest-release-details">Checking latest release…</p>
+      <div class="dl-btns">
+        <a class="btn btn-p" id="latest-release-link" href="https://github.com/uthsarad/NeOS/releases/latest" target="_blank" rel="noopener noreferrer">Latest Release →</a>
+      </div>
+    </div>
+
+    <div class="build-box reveal">
+      <h3>Release History</h3>
+      <ul class="release-list" id="release-list">
+        <li class="release-item release-item-muted">Loading releases…</li>
+      </ul>
+    </div>
+  </div>
+</div>
 <div class="page" id="page-news"><div class="content-area"><div class="sec-eyebrow">Latest Updates</div><h2 class="sec-title">News &amp; <em>Releases</em></h2></div></div>
 <div class="page" id="page-support"><div class="content-area"><div class="sec-eyebrow">We're here to help</div><h2 class="sec-title">Support</h2></div></div>
 
@@ -93,7 +116,7 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>© 2026 NeOS Project</p>
+    <p>© <span id="footer-year">2026</span> NeOS Project</p>
     <div class="theme-switcher" aria-label="Theme switcher">
       <span class="theme-label">Theme:</span>
       <button class="theme-btn" data-theme-choice="dawn" type="button">Dawn</button>
