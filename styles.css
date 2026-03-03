@@ -336,6 +336,34 @@ body::after {
 .build-box { background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:28px 32px;margin-top:20px; }
 .build-box p { font-size:14px;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:16px; }
 
+.release-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.release-item {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:10px 0;
+  border-bottom:1px solid var(--border);
+}
+.release-item:last-child { border-bottom:none; }
+.release-item a {
+  font-size:14px;
+  color:var(--text);
+  text-decoration:none;
+}
+.release-item a:hover { color:var(--accent); }
+.release-date {
+  font-family:'DM Mono', monospace;
+  font-size:11px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.release-item-muted {
+  font-size:13px;
+  color:var(--muted);
+  border-bottom:none;
+}
+
 /* ─── NEWS ─── */
 .news-layout { display:grid;grid-template-columns:1fr 300px;gap:40px; }
 .news-feat { border-radius:10px;overflow:hidden;border:1px solid var(--border);background:var(--bg2);margin-bottom:20px;transition:border-color 0.25s,transform 0.25s;cursor:pointer; }
@@ -507,4 +535,5 @@ footer{border-top:1px solid var(--border);background:var(--bg2);padding:48px 0 2
   .site-hero{padding:60px 24px 52px;min-height:360px}
   .identity-grid{border-radius:10px}
   .id-col:first-child{border-right:none;border-bottom:1px solid var(--border)}
+  .release-item{flex-direction:column;align-items:flex-start}
 }
